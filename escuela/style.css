@@ -1,0 +1,291 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+html {
+    scroll-behavior: smooth;
+}
+.hero {
+        background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('imagenes/im2.avif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        text-align: center;
+        min-height: 60vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+}
+.navbar{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent; 
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+.navbar ul li a:hover {
+    background: rgba(255, 250, 250, 0.1);
+    border-radius: px;
+}
+.linea{
+    width: 80%;
+    height: 2px;
+    background: white;
+    margin: 20px 0;
+}
+
+.dropdown button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.dropdown:hover ul {
+    display: block;
+   
+}
+
+.carreras-destacadas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 20px;
+    background: #f7f0f0;
+}
+
+.card {
+    background: white;
+    width: 150px;
+    height: 190px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #838683;
+    color: white;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+.why-choose-us {
+    text-align: center;
+    padding: 80px 20px;
+   background-color: #d6cbcb;
+}
+.why-choose-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.why-choose-us .text {
+    flex: 1;
+}
+
+.why-choose-us .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.why-choose-us .image img {
+    width: 200%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.feature {
+    background: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 120px;
+}
+.info-carreras {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 20px;
+    background: #f7f0f0;
+}
+
+.info {
+    text-align: center;
+    width: 250px;
+}
+
+.grid-carreras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.carrera-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-left, .footer-center, .footer-right {
+    width: 30%;
+}
+
+.footer-right input {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-right button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.footer-right button:hover {
+    background: #666;
+}
+
+.carreras-terciarias,
+.carreras-universitarias {
+    background-color:#d6cbcb;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.carrera {
+    margin-bottom: 20px;
+}
+.carrera-card{
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carrera-card:hover{
+        transform: scale(1.1);
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+.carrera h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.carrera p {
+    color: #666;
+}
+.button {
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover {
+    background: white;
+    color: black;
+    border: 2px solid white;
+}
+.card-buttons {
+    position: absolute;
+    top: 50%;
+    right: 30;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+.carrera-card:hover .card-buttons {
+    opacity: 1;
+    right: 10px; 
+}
+
+.card-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+.card-buttons a:hover {
+    background: #ddd;
+}
